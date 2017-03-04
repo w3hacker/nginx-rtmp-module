@@ -3,6 +3,10 @@ mac安装
 ./configure --add-module=./nginx-rtmp-module --with-http_ssl_module --with-cc-opt='-I/usr/local/opt/openssl@1.1/include' --with-ld-opt='-L/usr/local/opt/openssl@1.1/lib'
 ```
 
+```
+ffmpeg -re -i React\ Native\ Tutorial\ .mp4 -c copy -f flv rtmp://127.0.0.1:1935/live
+```
+
 # NGINX-based Media Streaming Server
 ## nginx-rtmp-module
 
